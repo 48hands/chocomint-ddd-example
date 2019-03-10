@@ -17,7 +17,11 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
    * a path of `/`.
    */
   def index = Action {
-    Ok(views.html.index("Your new application is ready."))
+    Ok(views.html.index("Welcome to Play"))
+  }
+
+  def hello(name: String) = Action {
+    Ok(views.html.hello(name))
   }
 
 }

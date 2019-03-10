@@ -31,7 +31,7 @@ lazy val application = (project in file("modules/application"))
 // アダプタ層(web)
 lazy val web = (project in file("modules/web"))
   .settings(/* FIXME */)
-  .dependsOn(application)
+  .dependsOn(application, infra)
 ```
 
 ## Webアプリケーション系のsbtタスク

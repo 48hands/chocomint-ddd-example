@@ -52,4 +52,5 @@ lazy val web = (project in file("modules/web"))
     dockerRepository := Some("chocomint-kusoyaro"), // レジストリ名
     dockerExposedPorts := Seq(9000) // 公開するport
   )
-  .dependsOn(application)
+  .dependsOn(application, infra)
+
