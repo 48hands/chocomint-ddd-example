@@ -44,3 +44,6 @@ GET         /getJson2                       controllers.MyJsonController.getJson
 GET         /getJson3                       controllers.MyJsonController.getJson3
 GET         /getJson4                       controllers.MyJsonController.getJson4
 GET         /savePlace                      controllers.MyJsonController.savePlace
+GET         /sayHello                       controllers.SimpleActorController.sayHello(name: String)
+GET         /getConfig                      controllers.SimpleActorController.getConfig
+GET         /getChildActor                  controllers.SimpleActorController.getChildActor

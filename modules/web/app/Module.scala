@@ -26,8 +26,8 @@ class Module extends AbstractModule {
     // Set AtomicCounter as the implementation for Counter.
     bind(classOf[Counter]).to(classOf[AtomicCounter])
 
-    bind(classOf[UserStorage]).to(classOf[UserStorageImpl]).asEagerSingleton()
-    bind(classOf[ChocomintService]).to(classOf[ChocomintServiceImpl]).asEagerSingleton()
+    bind(classOf[UserStorage]).to(classOf[UserStorageImpl])
+    bind(classOf[ChocomintService]).to(classOf[ChocomintServiceImpl])
   }
 
 }
